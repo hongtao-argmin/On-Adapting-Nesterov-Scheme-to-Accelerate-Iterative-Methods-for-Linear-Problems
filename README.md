@@ -6,7 +6,7 @@ In this paper, we propose a closed-form solution to decide the optimal parameter
 
 ArXiv Paper Link: https://arxiv.org/abs/2102.09239.
 
-``Demo_Laplacian.m'': the demo of solving the Laplacian problem.
+``Demo_Laplacian.m'': the demo of solving the poisson problem.
 
 ``Fig6_DampingFactorJacobi.m'': reproduce Fig. 6 of our paper.
 
