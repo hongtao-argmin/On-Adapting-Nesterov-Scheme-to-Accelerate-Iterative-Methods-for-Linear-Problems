@@ -3,12 +3,8 @@
 % Estimate the Conv. Rate for a given symbol and number of iterations.
 % symbol can be a complex number.
 %
-function r_final = ChebyshevIter(symbol,b_1,b_N,isPrint)% niter,
+function r_final = ChebyshevIter(symbol,b_1,b_N,isPrint)
 
-% if niter<5
-%     % we need enough larger iteration to obtain a more accurate solution.
-%     niter = 50;
-% end
 if nargin<=3
     isPrint = false;
 end
