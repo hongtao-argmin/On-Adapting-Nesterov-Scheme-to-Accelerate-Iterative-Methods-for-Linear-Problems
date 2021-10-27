@@ -9,7 +9,7 @@ r_k_1 = u;
 p_k_1 = u;
 % and initial guess for the solution
 r = f - Lu(u,L_stencil,h,bndcond);        % The initial residual
-rnorm = norm(r(:))/n;             % This will store the residual vector norm after each cycle
+rnorm = norm(r(:))/n;                     % This will store the residual vector norm after each cycle
 u_set{1} = u;
 CPUTime = zeros(MaxIter+1,1);
 for iters = 1:MaxIter
@@ -71,15 +71,4 @@ CPUTime = cumsum(CPUTime);
 CPUTime = CPUTime(1:MaxIter+1);
 temp = rnorm(2:end) ./ rnorm(1:end-1);
 fprintf('%f\n',geomean(temp(end-5:end)))
-% figure
-% semilogy([0:MaxIter],rnorm,'k-');
-% title('Residual Norm History')
-% xlabel('Iterations')
-% ylabel('Residual Norm')
-% % Plot residual norm convergence factors.
-% figure
-% plot([1:MaxIter],rnorm(2:end) ./ rnorm(1:end-1),'k-');
-% title('Residual Convergence Factor Per Cycle')
-% xlabel('Iterations')
-% ylabel('Convergence Factor')
 return
