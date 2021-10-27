@@ -7,7 +7,9 @@ In this paper, we propose a closed-form solution to decide the optimal parameter
 ArXiv Paper Link: https://arxiv.org/abs/2102.09239.
 
 ``Demo_Laplacian.m'': the demo of solving the Laplacian problem.
+
 ``Fig6_DampingFactorJacobi.m'': reproduce Fig. 6 of our paper.
+
 ``Figs4and5_ChebyVSNesterACFComplexEigenvalues'': reproduce Fig.s 4 and 5 of our paper.
 
 Please add ``utilities'' folder in your own matlab path before running the codes. 
