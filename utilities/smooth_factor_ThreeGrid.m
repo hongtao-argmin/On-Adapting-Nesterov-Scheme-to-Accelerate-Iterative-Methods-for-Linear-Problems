@@ -63,12 +63,6 @@ matr_size = 4;  % 4\times 4 matrix - 2D
 i = sqrt(-1);   % the complex unit
 m = size(L,1);
 
-% if sum(sum(abs(L-L')))<epsilon
-%     isSymmtric = true;
-% else
-%     isSymmtric = false;
-% end
-
 % the size of stencil is 3*3
 % formulate the matrix for calculating the symbol
 global smooth_operator smooth_operat_Jacobi
@@ -133,10 +127,6 @@ for index_i = 1:length(theta)
                 continue;
             end
         end
-        
-        %         if isSymmtric&&theta_2<0
-        %             continue;
-        %         end
         
         % build analysis on pi/2
         [theta_1_hat,theta_2_hat] = AngleAlias(theta_1,theta_2,'Pi_2');
