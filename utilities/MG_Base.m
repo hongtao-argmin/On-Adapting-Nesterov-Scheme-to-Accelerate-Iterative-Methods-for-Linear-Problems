@@ -24,16 +24,4 @@ CPUTime = cumsum(CPUTime);
 CPUTime = CPUTime(1:n_cycles+1);
 temp = rnorm(2:end) ./ rnorm(1:end-1);
 fprintf('%f\n',geomean(temp(end-5:end)))
-% figure
-% semilogy([0:n_cycles],rnorm,'k-');
-% title('Residual Norm History')
-% xlabel('Iterations')
-% ylabel('Residual Norm')
-% % Plot residual norm convergence factors.
-% figure
-% plot([1:n_cycles],rnorm(2:end) ./ rnorm(1:end-1),'k-');
-% title('Residual Convergence Factor Per Cycle')
-% xlabel('Iterations')
-% ylabel('Convergence Factor')
-
 end
