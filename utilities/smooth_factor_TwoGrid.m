@@ -62,7 +62,7 @@ critera_low = @(x)(x>=-pi/2&&x<pi/2);
 for index_i = 1:length(theta)
     theta_1 = theta(index_i);
     for index_j = 1:length(theta)
-        theta_2 = theta(index_i);
+        theta_2 = theta(index_j);
         if ~critera_low(theta_1)
             continue;
         end
