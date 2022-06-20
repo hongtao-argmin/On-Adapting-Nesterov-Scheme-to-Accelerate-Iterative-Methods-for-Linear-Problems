@@ -1,4 +1,3 @@
-% implement RB in an efficient way later
 function u = RB(u,f,h,w,L_stencil,bndcond,iseven)         % Red-Black Gauss-Seidel relaxation
 % L_stencil is assumed to be 9 poitns.
 if isempty(w)
